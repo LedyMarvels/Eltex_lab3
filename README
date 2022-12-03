@@ -1,0 +1,32 @@
+Sysfs read and write and Blink keyboard kbleds.c  linux kernel 4.15
+
+Installing the linux headers
+
+You need to install the linux-headers-.. first as shown below. Depending on your distro, use apt-get or yum.
+
+# apt-get install build-essential linux-headers-$(uname -r)
+
+Next, create the following sys.c module in C programming language.
+
+In your text make one function __init and __exit.
+
+Write Makefile to Compile Kernel Module
+
+The following makefile can be used to compile the above sysfs read and write and Blink keyboard kbleds.c  linux kernel
+
+Use the make command to compile sysfs read and write and Blink keyboard kbleds.c  linux kernel as shown below.
+
+Use command 
+#sudo insmod sys.ko
+#cd /sys/kernek/systest/
+
+Go to user sudo su and put you value to "test"
+
+# echo 3/1/2 > test
+
+Check value and then exit
+
+#cat test
+
+Use the make command to compile sysfs read and write and Blink keyboard kbleds.c  linux kernel as shown below.
+
